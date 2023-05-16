@@ -2,13 +2,32 @@
 
 .header{
 
-    background-color: #1A1A1D !important;
-    border-radius: 10px;
+    background-color: #1A1A1D ;
+    border-radius:  0px 10px 5px 60px;
     min-height: 60px;
+    width: 35%;
+     margin-left: 68%;
+     padding-top: 7px;
+     margin-top: -40px !important;
+   
+    /* background-color:rgb(255, 191, 71) !important; */
+    background: linear-gradient(-90deg,rgb(255, 191, 17) ,rgb(255, 180, 49))!important;
     /* margin: 20px 20px 10px 20px; */
     
     }
 
+    header{
+   display: none;
+    background-color: #1A1A1D ;
+    border-radius:  0px 0px 60px 60px;
+    min-height: 60px;
+    width: 90%;
+    text-align: center;
+     padding-top: 7px;
+     
+    /* background-color:rgb(255, 191, 71) !important; */
+    background: linear-gradient(-90deg,rgb(255, 191, 17) ,rgb(255, 180, 49))!important;
+    }
 body{
     background-color: #2b2b2b  ;
     display: flexbox;
@@ -21,13 +40,13 @@ body{
     font-size: 20px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 500;
-    color:  rgb(255, 191, 71);
+    color:  rgb(255, 255, 255);
     font-weight: 700;
 }
 
 
 .link:hover{
-    color: rgb(199, 84, 63);
+    color: #2b2b2b;
     cursor: pointer;
     text-decoration:overline;
     /* transform: translate(20px); */
@@ -50,7 +69,7 @@ body{
 }
 aside{
     position: fixed;
-    top: 15%;
+    top: 7%;
     width: 25%;
     background-color: #1A1A1D;
     margin-left: 20px;
@@ -76,13 +95,15 @@ aside{
 @media only screen and (min-width: 250px) {
     .main{
         position: relative;
-        top: 10%;
+        top: 7%;
+        margin-right: 3%;
         width: 90%;
-        margin-left: 2%;
+        
+     
     }
     aside{
    position: relative;
-   top: 10%;
+   top: 7%;
         width: 90%;
       margin-left: 2%;
     }
@@ -92,20 +113,26 @@ aside{
         padding-left: 10px;
         font-size: x-small;
     }
+    .header{
+        display: none;
+    }
+    header{
+        display: block !important;
+    }
  }
 /* mobile small */
 @media only screen and (min-width: 350px) {
 
     aside{
         position: relative;
-        top: 10%;
+        top: 7%;
         margin-bottom: 2%;
         width: 93%;
     }
     .main{
         position: relative;
-        top: 10%;
-        margin-left: 2%;
+        top: 7%;
+        margin-right: 3%;
         width: 93%;
     }
     .mail,.phone,.phone:hover,.mail:hover{
@@ -114,23 +141,29 @@ aside{
         padding-left: 10px;
         font-size: large;
     }
+    .header{
+       display: none;
+    }
+    header{
+        display: block !important;
+    }
  }
  /* mobile screen large */
  @media only screen and (min-width: 768px) {
       aside{
         position: relative;
-        top: 10%;
-    width: 93%;
+        top: 7%;
+    width: 90%;
     margin-bottom: 2%;
 }
 .main{
     position: relative;
-    top: 10%;
-    margin-left: 2%;
-    width: 93%;
+    top: 7%;
+
+    width: 90%;
 
     background-color: #1A1A1D;
-    margin-right: 20px;
+    margin-right: 3%;
     padding: 25px;
     border-radius: 15px;
     float: right;
@@ -141,20 +174,26 @@ aside{
     padding-left: 10px;
     font-size: large;
 }
+.header{
+    display: none;
+}
+header{
+    display: block !important;
+}
 }
 
 /* ipad  */
 @media only screen and (max-width: 950px)and (min-width:820px) {
     
     aside{
-        position: fixed;
+        position: relative;
         top: 10%;
-    width: 30%;}
+    width: 90%;}
     .main{
         position: relative;
         top: 10%;
-        width: 65%;
-        float: right;
+        width:95%;
+
     }
     .icon{
         background-color:white;
@@ -171,6 +210,15 @@ aside{
         overflow: hidden;
      
     }
+    .header{
+        display: none;
+    }
+    header{
+        display: block !important ;
+    }
+    .skill{
+        width: 100%;
+    }
 
 }
 /* laptop */
@@ -178,7 +226,7 @@ aside{
     aside{
        
         position: fixed;
-        top: 15%;
+        top: 7%;
         width: 25%;
         background-color: #1A1A1D;
         margin-left: 20px;
@@ -203,12 +251,23 @@ aside{
         padding-left: 10px;
         font-size: small;
     }
+    .header{
+        display: block;    }
+
+        header{
+            display: none !important;
+        }
 }
 /* laptop */
 @media only screen and (min-width: 1000px) {
+   
+    .header{
+        display: block; 
+    }
     aside{
         position: fixed;
-    top: 15%;
+        
+    top: 7%;
     width: 25%;
     background-color: #1A1A1D;
     margin-left: 20px;
@@ -251,6 +310,8 @@ aside{
     -webkit-background-clip: text ;
     background-clip: text;
     text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     font-family: 'Prompt';
     font-weight: 700;
 }
@@ -261,9 +322,10 @@ aside{
     font-size: medium;
 }
 .details{
-    display: flexbox;
-    backdrop-filter: blur(5px);
+    
     background-color: #2b2b2b;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
 border-radius: 10px;
      }
 .icon{
@@ -312,24 +374,23 @@ border-radius: 10px;
 }
 .do,.do1{
  display: flexbox;
-    background-color: #222222;
+
+ background-color: #ffffff05;   
+     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
     border-radius: 20px;
     padding: 10px;
     color: white;
-    min-width: 450px;
+    min-width: 425x;
     justify-content: center;
     align-items: center;
 }
-.do-img{
- width: 90px;
+.do-img,.do-img1{
+ width: 100px;
 margin-left: 15px;
 margin-right: 15px;
 }
-.do-img1{
-    width: 100px;
-/* margin-left: -90px; */
-   margin-right: 5px;
-   }
+
 .pro-title{
     font-family: 'Space Grotesk', sans-serif;
 margin-top: 15px;
@@ -341,6 +402,7 @@ margin-top: 15px;
 }
 .pro{
     display: flex;
+    
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
@@ -355,27 +417,49 @@ margin-top: 15px;
     font-family: 'Prompt', sans-serif;
     margin-top: 15px;
    
-    font-size: xx-large;
+    font-size: larger;
     color:  rgb(255, 191, 71);
 }
 .skill{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-       background-color: #222222;
+
        border-radius: 20px;
-       padding: 10px;
+       padding: 10px 10px 0px 10px;
        color: white;
        min-width: 200px;
+       max-height:250px;
        justify-content: center;
        align-items: center;
        text-align: center;
    }
 .skill-img{
-    width: 120px;
+    width: 100px;
    margin-left: 15px;
    margin-right: 15px;
    }
    .skill-img:hover{
     transform: translate3d(-0.5rem, -1rem, 1rem);
+   }
+   .main-title{
+ 
+    letter-spacing: 10px;
+   }
+   .sumbit{
+    display: flexbox;
+    background-color: transparent;
+   border-color: tomato;
+ border-radius: 10px;
+ color: white;
+ padding: 12px;
+ margin-left: 33%;
+ margin-right: 33%;
+
+
+ min-width: 33%;
+   }
+
+   .sumbit:hover{
+    background-color: tomato;
    }
