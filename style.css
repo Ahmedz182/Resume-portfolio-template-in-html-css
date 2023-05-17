@@ -93,6 +93,8 @@ aside{
 }
 /* mobile small extra smalla*/
 @media only screen and (min-width: 250px) {
+    
+
     .main{
         position: relative;
         top: 7%;
@@ -119,6 +121,7 @@ aside{
     header{
         display: block !important;
     }
+
  }
 /* mobile small */
 @media only screen and (min-width: 350px) {
@@ -216,9 +219,7 @@ header{
     header{
         display: block !important ;
     }
-    .skill{
-        width: 100%;
-    }
+  
 
 }
 /* laptop */
@@ -423,13 +424,13 @@ margin-top: 15px;
 .skill{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-
+   
+max-height: min-content;
        border-radius: 20px;
        padding: 10px 10px 0px 10px;
        color: white;
        min-width: 200px;
-       max-height:250px;
+       
        justify-content: center;
        align-items: center;
        text-align: center;
