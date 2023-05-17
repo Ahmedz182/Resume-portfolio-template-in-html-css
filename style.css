@@ -417,23 +417,41 @@ margin-top: 15px;
 .skill-title{
     font-family: 'Prompt', sans-serif;
     margin-top: 15px;
-   
     font-size: larger;
     color:  rgb(255, 191, 71);
 }
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+   background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+  filter: blur(25px);
+     min-height: min-content;
+    border-radius: 20px;
+    padding: 10px 10px 0px 10px;
+    color: white;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
 .skill{
     display: flex;
     flex-wrap: wrap;
-   
-max-height: min-content;
-       border-radius: 20px;
-       padding: 10px 10px 0px 10px;
-       color: white;
-       min-width: 200px;
-       
-       justify-content: center;
-       align-items: center;
-       text-align: center;
+  
+  
+     max-height: min-content;
+    border-radius: 20px;
+    padding: 10px 10px 0px 10px;
+    color: white;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    }
 .skill-img{
     width: 100px;
