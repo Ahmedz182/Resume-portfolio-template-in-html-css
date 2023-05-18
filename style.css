@@ -17,10 +17,6 @@
     }
 
     header{
-     overflow: hidden;
-position: fixed;
-
-top: 0;
    display: none;
     background-color: #1A1A1D ;
     border-radius:  0px 0px 60px 60px;
