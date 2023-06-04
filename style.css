@@ -605,14 +605,16 @@ input:invalid {
 animation: shake2 300ms;
 color: #ef0000;
 font-weight: 500;
-
 border-radius: 5px;
 }
 @keyframes shake2 {
-25%{
-transform: translateX(4px);
-}
-50%{ transform: translateX(-4px);}
+    0%{
+    transform: translateX(-4px); 
+    }
+    25%{
+    transform: translateX(4px);
+    }
+    50%{ transform: translateX(-4px);}
 
-75%{  transform: translateX(4px);}
+    75%{  transform: translateX(4px);}
 }
