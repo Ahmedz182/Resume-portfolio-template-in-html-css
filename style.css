@@ -103,9 +103,17 @@ position: relative;
 top: 7%;
 margin-right: 3%;
 width: 90%;
-
-
 }
+.footer{
+    position: relative;
+    top: 0;
+    width: 90%;
+    background-color: #1A1A1D;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    float: right;
+    }
 aside{
 position: relative;
 top: 7%;
@@ -144,6 +152,16 @@ top: 7%;
 margin-right: 3%;
 width: 93%;
 }
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 93%;
+    background-color: #1A1A1D;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    float: right;
+    }
 .mail,.phone,.phone:hover,.mail:hover{
 text-decoration: none;
 color: tomato;
@@ -176,6 +194,16 @@ padding: 25px;
 border-radius: 15px;
 float: right;
 }
+.footer{
+    position: relative;
+    bottom:  0;
+    width: 90%;
+    background-color: #1A1A1D;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    float: right;
+    }
 .mail,.phone,.phone:hover,.mail:hover{
 text-decoration: none;
 color: tomato;
@@ -192,7 +220,6 @@ display: block !important;
 
 /* ipad  */
 @media only screen and (max-width: 950px)and (min-width:820px) {
- 
 aside{
 position: relative;
 top: 10%;
@@ -204,6 +231,16 @@ top: 10%;
 width:95%;
 
 }
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 95%;
+    background-color: #1A1A1D;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    float: right;
+    }
 .icon{
 background-color:white;
 border-radius: 10px;
@@ -253,6 +290,16 @@ padding: 25px;
 border-radius: 15px;
 float: right;
 }
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 70%;
+    background-color: #1A1A1D;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    float: right;
+    }
 .mail,.phone,.phone:hover,.mail:hover{
 text-decoration: none;
 color: tomato;
