@@ -10,13 +10,13 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
     />
     <title>Portfolio | Ahmed Mughal</title>
     <meta name="description" content="A Portfolio of Muhammad Ahmed Fayyaz." />
@@ -25,11 +25,7 @@
     <div>
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a
-            class="nav-link active link"
-            aria-current="page"
-            href="#home"
-          >
+          <a class="nav-link active link" aria-current="page" href="#home">
             Home
           </a>
         </li>
@@ -40,14 +36,20 @@
           <a class="nav-link link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link" id="cv" href="https://github.com/Ahmedz182/Resume-portfolio-template-in-html-css/raw/main/assets/cv.pdf" >Download CV</a>
+          <a
+            class="nav-link link"
+            id="cv"
+            href="https://github.com/Ahmedz182/Resume-portfolio-template-in-html-css/raw/main/assets/cv.pdf"
+          >
+            Download CV
+          </a>
         </li>
       </ul>
     </div>
   </header>
   <body class="mt-4">
     <aside>
-      <div class="side-dev" >
+      <div class="side-dev">
         <img
           src="./img/IMG_20230430_042353.jpg"
           alt="dev-pic"
@@ -58,10 +60,25 @@
           <br />
           Ahmed Fayyaz !
         </h4>
-        <h5 class="dev-title">Web Developer | Freelancer</h5>
+        <div class="dev-title">
+          <span class="pro-title line-after">Web Developer</span>
+          <span class="pro-title">Freelancer</span>
+        </div>
       </div>
-
-      <br />
+      <div class="social-icon">
+        <a href="https://www.facebook.com/ahmedx182" target="_blank">
+          <i class="social fab fa-facebook mb-2"></i>
+        </a>
+        <a href="https://instagram.com/ahmedz182" target="_blank">
+          <i class="social fab fa-instagram mb-2"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ahmedz182/" target="_blank">
+          <i class="social fab fa-linkedin mb-2"></i>
+        </a>
+        <a href="https://github.com/ahmedz182" target="_blank">
+          <i class="social fab fa-github mb-2"></i>
+        </a>
+      </div>
       <div class="details">
         <img src="./img/email.png" alt="email" class="icon" />
         <a href="mailto:ahmedmughal3182@gmail.com" class="mail">
@@ -95,11 +112,7 @@
         <div class="header" id="home">
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a
-                class="nav-link active link"
-                aria-current="page"
-                href="#home"
-              >
+              <a class="nav-link active link" aria-current="page" href="#home">
                 Home
               </a>
             </li>
@@ -110,11 +123,17 @@
               <a class="nav-link link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link" id="cv" href="https://github.com/Ahmedz182/Resume-portfolio-template-in-html-css/raw/main/assets/cv.pdf" >Download CV</a>
+              <a
+                class="nav-link link"
+                id="cv"
+                href="https://github.com/Ahmedz182/Resume-portfolio-template-in-html-css/raw/main/assets/cv.pdf"
+              >
+                Download CV
+              </a>
             </li>
           </ul>
         </div>
-        <div >
+        <div>
           <h3 class="main-title">About Me</h3>
           <hr class="title-line" />
           <p class="main-desc">
@@ -160,7 +179,7 @@
               </div>
             </div>
 
-            <div class="col-5 do1 d-flex show">
+            <div class="col-6 do1 d-flex show">
               <div>
                 <img src="./img/web-develop.webp" alt="web" class="do-img1" />
               </div>
@@ -183,9 +202,8 @@
       <div class="main mt-3" id="service">
         <h4 class="main-title">Skill</h4>
         <hr class="title-line" />
-        <div class="mt-2 skills ">
-          </div>
-          <div class="col-12 skill">
+        <div class="mt-2 skills"></div>
+        <div class="col-12 skill">
           <div class="d-flex me-3">
             <div>
               <img src="./img/html5.webp" alt="web" class="skill-img" />
@@ -208,7 +226,7 @@
             </div>
           </div>
 
-          <div class=" me-3 d-flex">
+          <div class="me-3 d-flex">
             <div>
               <img src="./img/js.webp" alt="web" class="skill-img" />
               <!-- <hr class="title-line2"> -->
@@ -218,7 +236,7 @@
               </p>
             </div>
           </div>
-          <div class=" d-flex">
+          <div class="d-flex">
             <div>
               <img src="./img/jquery.webp" alt="web" class="skill-img" />
               <!-- <hr class="title-line2"> -->
@@ -228,8 +246,7 @@
               </p>
             </div>
           </div>
-        
-      </div>
+        </div>
       </div>
     </section>
 
@@ -249,6 +266,7 @@
               type="text"
               required
               name="fname"
+              pattern="[A-z]*"
               id="1"
             />
             <br />
@@ -261,6 +279,7 @@
               placeholder="Last Name"
               type="text"
               name="lname"
+              pattern="[A-z]*"
               required
               id="2"
             />
@@ -296,11 +315,24 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="footer mb-2 text-center">
+        <p class="pro-title">
+          All Rights reserved By
+          <a href="https://ahmedz182.github.io/" target="_blank">
+            <span style="color: white;"><b>&nbsp; Ahmed Mughal</b></span>
+          </a>
+        </p>
+        <p class="fotter-text">
+          Made With ❤️ In Pakistan
+        </p>
+      </div>
+    </section>
   </body>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
   ></script>
-  <script src="./style.js"></script>
 </html>
